@@ -1,14 +1,14 @@
-- name: install Ngnix
+- name: install ngnix
   hosts: node
   become: yes
   tasks:
-  - name: install Ngnix
+  - name: install ngnix
     ansible.builtin.dnf:
-      name: Ngnix
+      name: ngnix
       state: latest
-  - name: start Ngnix
+  - name: start ngnix
     ansible.builtin.service:
-      name: Ngnix
+      name: ngnix
       state: started
       enabled: yes
 
