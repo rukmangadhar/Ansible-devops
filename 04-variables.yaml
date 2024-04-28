@@ -1,5 +1,5 @@
 - name: variables
-  hosts: localhostt
+  hosts: localhost
   become: yes
   vars: # this is to declare varables
     cource: "Devops 78s"
