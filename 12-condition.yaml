@@ -4,7 +4,12 @@
   tasks:
   - name: user creted or not
     ansible.builtin.command: id devops
+    register: USER
     ignore_errors: true
+
+  - name: print user information
+    ansible.builtin.debug:
+      msg: "user information {{USER}}"
 
   - name: say hello
     ansible.builtin.debug: 
