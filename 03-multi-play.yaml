@@ -1,0 +1,15 @@
+- name: play1
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: this is task1
+    ansible.builtin.debug:
+      msg: this is from play1 task1
+
+- name: play2
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: this is task2
+    ansible.builtin.debug:
+      msg: this is frolm play2 task2
