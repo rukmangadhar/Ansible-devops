@@ -1,0 +1,18 @@
+- name: variables with files and prompts
+  hosts: localhost
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: USERNAME
+    prompt: please enter your username
+    private: false
+  - name: PASSWORD
+    prompt: please enter your password
+    private: true
+  tasks:
+  - name: this if from prompt
+    ansible.builtin.debug:
+     msg: "Hi, This is your username {{USERNAME}}. and password {{PASSWORD}}"
+  - name: this is from files
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{Course}} from trainer{{Trainer}} with {{Duration}} duration"
