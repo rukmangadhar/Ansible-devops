@@ -11,6 +11,10 @@
     ansible.builtin.debug:
       msg: "user information {{USER}}"
 
+  - name: create user
+    ansible.builtin.command: useradd devops
+    when: USER.rc !=0 
+
   - name: say hello
     ansible.builtin.debug: 
       msg: "Hello" 
