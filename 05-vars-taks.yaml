@@ -8,10 +8,10 @@
   tasks:
   - name: override variables
     vars:
-      Cource: "DevOps" 
+      Course: "DevOps" 
     ansible.builtin.debug:
-      msg: "Hi, I am learning {{Cource}} from {{Trainer}} with {{Duration}}"
+      msg: "Hi, I am learning {{Course}} from {{Trainer}} with {{Duration}}"
 
-  - name: proint info
+  - name: print info
     ansible.builtin.debug:
-      msg: "Hi, I am learning {{Cource}} from {{Trainer}} with {{Duration}}"
+      msg: "Hi, I am learning {{Course}} from {{Trainer}} with {{Duration}}"
