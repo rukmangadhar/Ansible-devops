@@ -1,0 +1,6 @@
+- name: this is from args
+  hosts: localhost
+  tasks:
+  - name: from args
+    ansible.builtin.debug:
+      msg: "Hi, This {{PERSON}} from {{LOCATION}}"

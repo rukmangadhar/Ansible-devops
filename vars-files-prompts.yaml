@@ -15,4 +15,4 @@
      msg: "Hi, This is your username {{USERNAME}}. and password {{PASSWORD}}"
   - name: this is from files
     ansible.builtin.debug:
-      msg: "Hi, I am learning {{Course}} from trainer{{Trainer}} with {{Duration}} duration"
+      msg: "Hi, I am learning {{Course}} from trainer{{Trainer}} with {{Duration}} duration" 
