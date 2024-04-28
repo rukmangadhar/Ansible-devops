@@ -4,6 +4,7 @@
   tasks:
   - name: user creted or not
     ansible.builtin.command: id devops
+    ignore_errors: true
 
   - name: say hello
     ansible.builtin.debug: 
