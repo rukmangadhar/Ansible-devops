@@ -1,0 +1,11 @@
+- name: variables
+  hosts: localhostt
+  become: yes
+  vars: # this is to declare varables
+    cource: "Devops 78s"
+    duration: "3.5 months"
+    timings: "7:15am to 8:45am"
+  tasks:
+  - name: print variables info
+    ansible.builtin.debug:
+      msg: "Hi i am learning {{cource}} with {{duration}} from {{timings}}"
