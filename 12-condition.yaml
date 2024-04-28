@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: user creted or not
-    ansible.builtin.command: id expence
+    ansible.builtin.command: id devops
 
   - name: say hello
     ansible.builtin.debug: 
