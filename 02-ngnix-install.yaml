@@ -2,12 +2,12 @@
   hosts: all
   become: yes
   tasks:
-  - name: install ngnix
-    ansible.builtin.dnf:
-      name: nginx
-      state: latest
-  - name: start ngnix
+  - name: intall nginx
+    ansible.builtin.yum:
+     name: nginx
+     state: latest
+  - name: start nginx
     ansible.builtin.service:
-      name: nginx
-      state: started
-      enabled: yes
+     name: nginx
+     state: started
+     enabled: yes
