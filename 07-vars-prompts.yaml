@@ -1,6 +1,6 @@
 - name: variable prompts
   hosts: localhost
-  bacome: yes
+  #become: yes
   vars_prompt:
   - name: USERNAME
     prompt: Please enter your username
