@@ -20,7 +20,7 @@
     greeting: "HELLO, GODD MORNING"
   tasks:
   - name: print lower case
-  ansible.builtin.debug:
+    ansible.builtin.debug:
     msg: "{{greeting | lower}}"
 
 
