@@ -17,11 +17,19 @@
 - name: Lower case
   hosts: localhost
   vars: 
-    greeting: "HELLO, GODD MORNING"
+    greeting: "HELLO, GOOD MORNING"
   tasks:
   - name: print lower case
     ansible.builtin.debug:
       msg: "{{greeting | lower}}"
 
+- name: remove duplicate
+  hosts: localhost
+  vars:
+    numbers: [1,2,4,4,3,3,5,5,5,5,5,5]
+  tasks:
+  - name: remove duplicate numbers
+    ansible.builtin.debug:
+      msg: "{{numbers | unique}}"
 
 
