@@ -10,8 +10,3 @@
     ansible.builtin.debug:
       msg: "Given number {{number}} is less then 10"
     when: number | int < 10
-
-  - name: given number greater then equal to 10
-    ansible.builtin.debug:
-      msg: "Given number {{number}} is greater then equal to 10"
-    when: number | int >= 10
