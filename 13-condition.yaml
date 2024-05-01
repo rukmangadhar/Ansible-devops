@@ -1,7 +1,7 @@
 - name: check number
   hosts: localhost
   become: yes
-  vars_promot: #prompts are always considered as text/string
+  vars_prompt: #prompts are always considered as text/string
   - name: number
     prompt: please enter your number
     private: no
