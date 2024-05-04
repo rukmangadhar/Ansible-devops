@@ -1,6 +1,6 @@
 - name: install packages
   hosts: web
-  bacome: yes
+  baecome: yes
   tasks:
   - name: install packages
     ansible.builtin.dnf:
