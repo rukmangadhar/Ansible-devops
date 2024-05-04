@@ -2,9 +2,10 @@
   hosts: web
   become: yes
   tasks:
-  ansible.builtin.dnf:
-    name: "{{item.name}}"
-    state: "{{item.state}}"
+  - name: install packages
+    ansible.builtin.dnf:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
 
   loop:
   - {name: 'nginx' , state: 'latest' }
